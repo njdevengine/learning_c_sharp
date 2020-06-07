@@ -6,6 +6,7 @@ namespace hello_world
     {
         public static void Main(string[] args) // this is a method called main. it is called when the program begins.
         {
+            Start:
             int num01;
             int num02;
 
@@ -16,6 +17,7 @@ namespace hello_world
 
             Console.WriteLine("Your number is: " + num01 * num02);
             Console.ReadKey();
+            goto Start;
         }
     }
 }
