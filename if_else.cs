@@ -13,10 +13,11 @@ namespace hello_world
                 Console.WriteLine("You must wait " + (18-age) + " years to enter.");
             } else if (age == 18) {
                 Console.WriteLine("You are the correct age to enter.");
-            } else{
-                Console.WriteLine("You may enter.");
+            } else {
+                Console.WriteLine("You are "+(age-18)+" years over 18. You may enter.");
             }
             Console.ReadKey();
             goto Start;
         }
     }
+}
