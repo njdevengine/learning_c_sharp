@@ -18,8 +18,21 @@ namespace FirstConsoleProject
                 Console.WriteLine("Correct!");
             } else
             {
-                Console.WriteLine("Wrong!");
+                int responses = numgen.Next(1, 4);
+                switch (responses)
+                {
+                    case 1:
+                        Console.WriteLine("bad");
+                        break;
+                    case 2:
+                        Console.WriteLine("wrong");
+                        break;
+                    default:
+                        Console.WriteLine("keep trying");
+                        break;
+                }
             }
+
             Console.ReadKey();
             goto Start;
         }
